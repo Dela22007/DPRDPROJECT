@@ -332,20 +332,21 @@
     flex: 1;
 }
 
-.sub-item-header .icon-wrapper {
+.sub-item-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.content-wrapper {
+    flex-grow: 1;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 24px;
-    height: 24px;
-    background-color: rgb(39, 45, 99);
-    color: white;
-    font-family: Arial, sans-serif;
-    font-size: 10px;
-    font-weight: bold;
-    min-width: 15px;
-    /* Adding transition for smooth hover effect */
-    transition: all 0.3s ease;
+    text-align: center;
 }
 
 /* Add hover effect for icon wrapper */
@@ -605,6 +606,19 @@ input[type="checkbox"] {
         tr:hover {
             background-color: #f9f9f9;
         }
+        .button {
+            background-color: #fff;
+            color: #2c3e50;
+            padding: 5px 10px;
+            border: 1px solid #2c3e50;
+            border-radius: 5px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color:rgb(7, 46, 131);
+            color: #fff;
+        }
     </style>
 
     <!-- CSS Files -->
@@ -765,112 +779,399 @@ input[type="checkbox"] {
                         </div>
                     </div>
                     <!-- Job Items -->
-<div class="job-items">
+                    <div class="job-items">
     <!-- Bagian Utama -->
     <div class="job-item">
         <div class="job-item-header" onclick="toggleCollapse(this)">
+        <i class="fas fa-chevron-down"></i>
             <p>Bagian Umum dan Keuangan</p>
-            <i class="fas fa-chevron-down"></i>
+            <div class="button">Aksi</div>
         </div>
         <div class="job-item-body">
             <!-- Sub Bagian -->
             <div class="sub-item">
                 <div class="sub-item-header" onclick="toggleSubCollapse(this)">
-                    <div class="content-wrapper">
-                        <p>Sub Bagian Umum</p>
+                <i class="fas fa-chevron-right"></i>
+                 <div class="content-wrapper">
+                        <p>Kepala Sub Bagian Umum</p>
                     </div>
-                    <i class="fas fa-chevron-right"></i>
+                    <div class="button">Aksi</div>
                 </div>
                 <div class="sub-item-body">
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-square">F</div>
-            <p>Analisis Sumber Daya Manusia Aparatur Ahli Pertama</p>
+            <p> Analis Sumber Daya Manusia Aparatur</p>
         </div>
+        <div class="button">Aksi</div>
     </div>
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-circle">P</div>
-            <p>PENATA KELOLA PEMERINTAHAN</p>
+            <p>Penelaah Kebijakan Pengadaan Barang dan Jasa</p>
         </div>
+        <div class="button">Aksi</div>
     </div>
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-circle">P</div>
-            <p>PENATA LAYANAN OPERASIONAL</p>
+            <p>Penyusun Naskah Rapat Pimpinan</p>
         </div>
+        <div class="button">Aksi</div>
     </div>
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-circle">P</div>
-            <p>PENGELOLA LAYANAN OPERASIONAL</p>
+            <p>Analis Tata Usaha</p>
         </div>
+        <div class="button">Aksi</div>
     </div>
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-circle">P</div>
-            <p>PENGELOLAH DATA DAN INFORMASI</p>
+            <p>Penyusun Kesekretariatan Fraksi</p>
         </div>
+        <div class="button">Aksi</div>
     </div>
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-circle">P</div>
-            <p>OPERATOR LAYANAN OPERASIONAL</p>
+            <p>Penyusun Rencana Kebutuhan Rumah Tangga dan Perlengkapan</p>
         </div>
+        <div class="button">Aksi</div>
     </div>
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-circle">P</div>
-            <p>PENGADMINISTRASIAN PERKANTORAN</p>
+            <p>Pengelola Rumah Tangga</p>
         </div>
+        <div class="button">Aksi</div>
     </div>
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-circle">P</div>
-            <p>OPERATOR LAYANANAN OPERASIONAL</p>
+            <p>Pengelola Kepegawaian</p>
         </div>
+        <div class="button">Aksi</div>
     </div>
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-circle">P</div>
-            <p>PENGELOLA UMUM OPERASIONAL</p>
+            <p>Pengelola Surat</p>
         </div>
+        <div class="button">Aksi</div>
     </div>
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-square">F</div>
-            <p>Perencana Ahli Madya</p>
+            <p> Pengelola Data</p>
         </div>
+        <div class="button">Aksi</div>
     </div>
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-square">F</div>
-            <p>Perencanan Ahli Muda</p>
+            <p>Pengelola Perjalanan Dinas</p>
         </div>
+        <div class="button">Aksi</div>
     </div>
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-square">F</div>
-            <p>Perencanan Ahli Pertama</p>
+            <p> Pengelola Instalasi Air dan Listrik</p>
         </div>
+        <div class="button">Aksi</div>
     </div>
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-circle">P</div>
-            <p>PENELAAH TEKNIS KEBIJAKAN</p>
+            <p>Teknisi Peralatan, Listrik dan Elektronika</p>
         </div>
+        <div class="button">Aksi</div>
     </div>
     <div class="sub-item-header">
         <div class="content-wrapper">
-            <div class="icon-wrapper icon-wrapper-circle">P</div>
-            <p>PENGELOLAH DATA DAN INFORMASI</p>
+            <p>Notulis Rapat</p>
         </div>
+        <div class="button">Aksi</div>
+    </div>
+    <div class="sub-item-header">
+        <div class="content-wrapper">
+            <p>Pengadministrasi Rapat</p>
+        </div>
+        <div class="button">Aksi</div>
+    </div>
+    <div class="sub-item-header">
+        <div class="content-wrapper">
+            <p>Pengadministrasi Umum</p>
+        </div>
+        <div class="button">Aksi</div>
+    </div>
+    <div class="sub-item-header">
+        <div class="content-wrapper">
+            <p>Pengemudi</p>
+        </div>
+        <div class="button">Aksi</div>
     </div>
 </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Perencana <strong>(Ahli Muda)</strong></p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p> Analis Perencanaan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Analis Laporan Akuntabilitas Kinerja</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p> Analis Laporan Keuangan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Penata Laporan Keuangan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p> Penyusun Rencana Kegiatan dan Anggaran</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Bendahara</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Penyusun Laporan Keuangan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Pengelola Bahan Perencanaan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Verifikator Keuangan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Pengelola Gaji</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Pengolah Data Laporan Pertanggung jawaban Bendahara</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p> Pengolah Data Sistem Informasi Perbendaharaan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+<div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Pengadministrasi Keuangan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header" onclick="toggleSubCollapse(this)">
+                <i class="fas fa-chevron-right"></i>
+                 <div class="content-wrapper">
+                        <p>Kepala Bagian Persidangan dan Perundang-Undangan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
             </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Perisalah Legislatif Ahli Muda <b>Ahli Muda</b></p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Analis Protokol</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Penyusun Risalah</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Analis Produk Hukum</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Penyusun Rancangan Perundang- Undangan </p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p> Analis Peraturan Perundang-Undangan dan Rancangan Peraturan Perundang-Undangan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Penelaah Jaringan Dokumentasi dan Informasi Hukum</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Pengelola Persidangan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Pengelola Dokumentasi</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Petugas Protokol</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Notulis Rapat</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Pengelola Data</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Pengadministrasi Rapat</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Pengadministrasi Data Peraturan Perundang - Undangan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+            <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Pengadministrasi Risalah</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header" onclick="toggleSubCollapse(this)">
+                <i class="fas fa-chevron-right"></i>
+                 <div class="content-wrapper">
+                        <p>Kepala Bagian Fasilitasi Penganggaran dan Pengawasan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Analis Kebijakan <b>Ahli Madya</b></p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p> Analis Keuangan Pusat dan Daerah</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Analis Hasil Pengawasan dan Pengaduan Masyarakat </p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Penyusun Rencana Tindak Lanjut dan Hasil Pengawasan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p> Analis Laporan Hasil Pengawasan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Pengelola Pelaporan dan Evaluasi Pelaksanaan Kegiatan APBD</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Analis Pelaksanaan Anggaran</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Analis Penganggaran</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Notulis Rapat</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Pengelola Data</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Pengadministrasi Rapat</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p>Penyusun Naskah Rapat Pimpinan</p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
+                <div class="sub-item-header">
+                    <div class="content-wrapper">
+                        <p> Pengelola Surat </p>
+                    </div>
+                    <div class="button">Aksi</div>
+                </div>
         </div>
     </div>
 </div>
+
 
 
 
